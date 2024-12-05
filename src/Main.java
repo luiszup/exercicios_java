@@ -101,17 +101,29 @@ public class Main {
         System.out.println("Digite um número inteiro: ");
         n = input.nextInt();
 
-        String numeroDigitado = Integer.toString(n);
-        String numeroReverso = "";
+        int numeroDigitado = n;
+        int reverso = 0;
 
-        for (int i = (numeroDigitado.length() - 1); i >= 0; i++) {
-            numeroReverso += numeroDigitado.charAt(i);
+        while(n > 0) {
+            int digito = n % 10;
+            reverso = reverso * 10 + digito;
+            n = n / 10;
         }
 
-        if (numeroReverso.equals(numeroDigitado)) {
-            System.out.println("É um palímdromo!");
+        if (numeroDigitado == reverso) {
+            System.out.println("É um palindromo!");
         } else {
-            System.out.println("Não é um palímdromo!");
+            System.out.println("Não é um palindromo!");
+        }
+
+        n = 0;
+        System.out.println("Digite um número inteiro: ");
+        n = input.nextInt();
+        System.out.println("Defina o limite dos múltiplos deste número: ");
+        int m = input.nextInt();
+
+        for (int i = n; i <= m; i+= n) {
+            System.out.println(i);
         }
 
         input.close();

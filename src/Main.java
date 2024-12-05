@@ -97,6 +97,23 @@ public class Main {
 
         System.out.println("O cálculo da potência ficou: " + produto);
 
+        n = 0;
+        System.out.println("Digite um número inteiro: ");
+        n = input.nextInt();
+
+        String numeroDigitado = Integer.toString(n);
+        String numeroReverso = "";
+
+        for (int i = (numeroDigitado.length() - 1); i >= 0; i++) {
+            numeroReverso += numeroDigitado.charAt(i);
+        }
+
+        if (numeroReverso.equals(numeroDigitado)) {
+            System.out.println("É um palímdromo!");
+        } else {
+            System.out.println("Não é um palímdromo!");
+        }
+
         input.close();
 
     }

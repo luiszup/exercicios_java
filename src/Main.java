@@ -61,6 +61,21 @@ public class Main {
             System.out.println("O número digitado não é primo.");
         }
 
+        n = 0;
+
+        System.out.println("Digite um número inteiro: ");
+        n = input.nextInt();
+
+        int numInvertido = 0;
+
+        while(n != 0) {
+            int digitoNum = n % 10;
+            numInvertido = numInvertido * 10 + digitoNum;
+            n = n / 10;
+        }
+
+        System.out.println("O número invertido fica: " + numInvertido);
+
         input.close();
 
     }

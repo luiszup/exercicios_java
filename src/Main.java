@@ -126,6 +126,22 @@ public class Main {
             System.out.println(i);
         }
 
+        System.out.println("Digite o número binário: ");
+        String numBinario = input.next();
+
+        int decimal = 0;
+        int potencia = 0;
+
+        for (int i = numBinario.length() - 1; i >= 0; i--) {
+            char digito = numBinario.charAt(i);
+            if (digito == '1') {
+                decimal += Math.pow(2, potencia);
+            }
+            potencia++;
+        }
+
+        System.out.println("O número binário para decimal fica: " + decimal);
+
         input.close();
 
     }

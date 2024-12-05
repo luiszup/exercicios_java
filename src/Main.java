@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        //Soma dos números
         System.out.println("Digite um número inteiro: ");
         int n = input.nextInt();
 
@@ -15,6 +16,7 @@ public class Main {
 
         System.out.println("Soma = " + soma);
 
+        //Fatorial
         n = 0;
 
         System.out.println("Digite um número inteiro: ");
@@ -29,6 +31,7 @@ public class Main {
 
         System.out.println("O fatorial desse número é: " + fatorial);
 
+        // Contagem de digitos
         n = 0;
 
         int quantidadeDigitos = 1;
@@ -42,6 +45,7 @@ public class Main {
 
         System.out.println("A quantidade de dígitos foram: " + quantidadeDigitos);
 
+        // Números primos
         n = 0;
 
         System.out.println("Digite um número: ");
@@ -61,6 +65,7 @@ public class Main {
             System.out.println("O número digitado não é primo.");
         }
 
+        // Inversão de número
         n = 0;
 
         System.out.println("Digite um número inteiro: ");
@@ -76,6 +81,7 @@ public class Main {
 
         System.out.println("O número invertido fica: " + numInvertido);
 
+        // Potência
         n = 0;
 
         int produto = 1;
@@ -97,6 +103,7 @@ public class Main {
 
         System.out.println("O cálculo da potência ficou: " + produto);
 
+        // Palindromo
         n = 0;
         System.out.println("Digite um número inteiro: ");
         n = input.nextInt();
@@ -116,6 +123,7 @@ public class Main {
             System.out.println("Não é um palindromo!");
         }
 
+        // Múltiplos de um número
         n = 0;
         System.out.println("Digite um número inteiro: ");
         n = input.nextInt();
@@ -126,6 +134,7 @@ public class Main {
             System.out.println(i);
         }
 
+        // Conversão de binário para decimal
         System.out.println("Digite o número binário: ");
         String numBinario = input.next();
 
@@ -142,6 +151,7 @@ public class Main {
 
         System.out.println("O número binário para decimal fica: " + decimal);
 
+        // Série de Fibonacci
         n = 0;
         int a = 1;
         int b = 0;

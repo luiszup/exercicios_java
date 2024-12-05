@@ -29,6 +29,20 @@ public class Main {
 
         System.out.println("O fatorial desse número é: " + fatorial);
 
+        n = 0;
+
+        int quantidadeDigitos = 1;
+        System.out.println("Digite um número inteiro: ");
+        n = input.nextInt();
+
+        while(n >= 10) {
+            n /= 10;
+            quantidadeDigitos++;
+        }
+
+        System.out.println("A quantidade de dígitos foram: " + quantidadeDigitos);
+
         input.close();
+
     }
 }

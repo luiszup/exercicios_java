@@ -76,6 +76,27 @@ public class Main {
 
         System.out.println("O número invertido fica: " + numInvertido);
 
+        n = 0;
+
+        int produto = 1;
+        System.out.println("Digite um número inteiro: ");
+        n = input.nextInt();
+        System.out.println("Digite o exponente dele: ");
+        int exponente = input.nextInt();
+
+        int resultado = 1;
+
+        if (exponente == 0) {
+            produto = produto * 1;
+        } else {
+            while (exponente != 0) {
+                produto = produto * n;
+                exponente--;
+            }
+        }
+
+        System.out.println("O cálculo da potência ficou: " + produto);
+
         input.close();
 
     }

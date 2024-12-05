@@ -119,7 +119,7 @@ public class Main {
         n = 0;
         System.out.println("Digite um número inteiro: ");
         n = input.nextInt();
-        System.out.println("Defina o limite dos múltiplos deste número: ");
+        System.out.println("Defina o limite dos múltiplos desse número: ");
         int m = input.nextInt();
 
         for (int i = n; i <= m; i+= n) {

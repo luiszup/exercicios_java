@@ -142,6 +142,20 @@ public class Main {
 
         System.out.println("O número binário para decimal fica: " + decimal);
 
+        n = 0;
+        int a = 1;
+        int b = 0;
+        int guardaValor;
+        System.out.println("Quantos primeiros números você deseja ver da série Fibonacci? ");
+        n = input.nextInt();
+
+        for (int i = 0; i <= n; i++){
+            System.out.println(b);
+            guardaValor = a;
+            a = a + b;
+            b = guardaValor;
+        }
+
         input.close();
 
     }

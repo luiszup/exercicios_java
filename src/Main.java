@@ -42,6 +42,25 @@ public class Main {
 
         System.out.println("A quantidade de dígitos foram: " + quantidadeDigitos);
 
+        n = 0;
+
+        System.out.println("Digite um número: ");
+        n = input.nextInt();
+
+        int cont = 0;
+
+        for (int modulo = 1; modulo <= n; modulo++) {
+            if (n % modulo == 0) {
+                cont++;
+            }
+        }
+
+        if (cont == 2) {
+            System.out.println("O número digitado é primo.");
+        } else {
+            System.out.println("O número digitado não é primo.");
+        }
+
         input.close();
 
     }
